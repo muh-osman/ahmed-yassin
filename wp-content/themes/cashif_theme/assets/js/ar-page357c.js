@@ -37,52 +37,10 @@ window.addEventListener("scroll", function () {
 
 // Submit form to google sheets
 const form = document.forms["submit-to-google-sheet"];
-const overlay = document.getElementById("form_overlay");
+// const overlay = document.getElementById("form_overlay");
 const btn = document.getElementById("btn");
 
-// const scriptURL =
-//   "https://script.google.com/macros/s/AKfycbwJC8IQU595yg-BAOGCHSJ0Ql9g30w81645F0eOgOKmrDD9hC6kEFG3RCy7RZ2qzcNwwA/exec";
-
-form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+form.addEventListener("submit", async function () {
   btn.innerHTML =
     '<span class="spinner-border spinner-border-sm" aria-hidden="true"></span>';
-
-  //
-  let name = document.getElementById("name").value;
-  //
-  let email = document.getElementById("email").value;
-  //
-  let subject = document.getElementById("subject").value;
-  //
-  let note = document.getElementById("note").value;
-
-  try {
-    const res = await fetch(
-      "https://script.google.com/macros/s/AKfycbycwTNQauJ0oXl95UyK-N2wZb88xZXartVuda300-SW8MA1cxzFIdVAamE4v2qje1xf/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          subject: subject,
-          note: note,
-        }),
-      }
-    );
-
-    if (res.ok) {
-      overlay.style.height = "100%";
-      btn.innerHTML = "تم الارسال";
-      btn.disabled = true;
-      btn.style.background = "#777";
-    }
-  } catch (error) {
-    console.error("Error!", error.message);
-    btn.innerHTML = "ارسال";
-    alert(error);
-  }
 });
