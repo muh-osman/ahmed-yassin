@@ -1577,19 +1577,21 @@ form {
 .carousel-caption {
   position: initial;
   z-index: 10;
-  padding: 5rem 8rem;
+  /* padding: 5rem 8rem; */
   color: #fff;
   text-align: center;
   font-size: 1.2rem;
   font-style: italic;
   line-height: 2rem;
+  overflow: hidden;
+  padding: 4px;
 }
 
 @media (max-width: 767px) {
   .carousel-caption {
     position: initial;
     z-index: 10;
-    padding: 3rem 2rem;
+    /* padding: 3rem 2rem; */
     color: #fff;
     text-align: center;
     font-size: 0.7rem;
@@ -1599,17 +1601,21 @@ form {
 }
 
 .carousel-caption img {
-  width: 6rem;
-  border-radius: 5rem;
+  /* width: 6rem; */
+  /* border-radius: 5rem; */
   margin: auto;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+
+  object-fit: cover;
+  width: 100% !important;
+  border-radius: 17px;
 }
 
 @media (max-width: 767px) {
   .carousel-caption img {
-    width: 4rem;
-    border-radius: 4rem;
-    margin-top: 1rem;
+    /* width: 4rem; */
+    /* border-radius: 4rem; */
+    /* margin-top: 1rem; */
   }
 }
 
@@ -1807,7 +1813,7 @@ form {
 }
 
 .footer-section .help-list h4 {
-  color: #051e34;
+  color: #63c8da;
 }
 .footer-section .help-list ul li {
   list-style-position: inside;
@@ -1835,7 +1841,7 @@ form {
   }
 }
 .footer-section .footer-contact h4 {
-  color: #051e34;
+  color: #63c8da;
 }
 .footer-section .footer-contact .footer-contact-li a {
   font-size: 14px;
