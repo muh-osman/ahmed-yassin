@@ -1773,6 +1773,7 @@ form {
   gap: 6px;
   flex-wrap: nowrap;
   margin-bottom: 35px;
+  justify-content: flex-end;
 }
 @media (max-width: 991px) {
   .footer-section .socials {
