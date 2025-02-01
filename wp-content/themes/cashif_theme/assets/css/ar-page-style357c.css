@@ -1015,7 +1015,7 @@ input.check-toggle-round-flat:checked + label:after {
   position: absolute;
   content: "";
   inset: 0;
-  background: #fef8fb;
+  background: #fff;
   z-index: -1;
   border-radius: inherit;
   /* background-color: red; */
