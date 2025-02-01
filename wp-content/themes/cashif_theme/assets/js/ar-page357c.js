@@ -58,18 +58,21 @@ form.addEventListener("submit", async function (e) {
   let note = document.getElementById("note").value;
 
   try {
-    const res = await fetch("https", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        subject: subject,
-        note: note,
-      }),
-    });
+    const res = await fetch(
+      "https://script.google.com/macros/s/AKfycby4zLa2qfDJXXqrn2r-kNETv7ya2J6HC8J5jjZddBTJsGWSRbJbmD9uZicUDrGYn5OI/exec",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          note: note,
+        }),
+      }
+    );
 
     if (res.ok) {
       overlay.style.height = "100%";
