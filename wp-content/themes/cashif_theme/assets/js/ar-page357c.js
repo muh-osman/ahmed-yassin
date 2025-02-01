@@ -53,7 +53,7 @@ form.addEventListener("submit", async function (e) {
   //
   let email = document.getElementById("email").value;
   //
-  let subject = document.getElementById("subject").innerHTML;
+  let subject = document.getElementById("subject").value;
   //
   let note = document.getElementById("note").value;
 
