@@ -1446,6 +1446,96 @@
     </div>
     <!--  -->
 
+    <!--start form-->
+    <section class="getService-section" id="contact">
+      <div class="container">
+        <h4>اتصل بنا</h4>
+        <form name="submit-to-google-sheet">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label>الاسم</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="ادخل اسمك"
+                  name="name"
+                  required
+                  id="name"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <label>البريد الاكتروني</label>
+                <input
+                  dir="rtl"
+                  type="email"
+                  class="form-control"
+                  placeholder="ادخل بريدك الالكتروني"
+                  name="email"
+                  required
+                  id="email"
+                />
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>الموضوع</label>
+                <input
+                  dir="rtl"
+                  type="text"
+                  class="form-control"
+                  placeholder="موضوع رسالتك"
+                  name="subject"
+                  required
+                  id="subject"
+                />
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <label>ملاحظات</label>
+                <textarea
+                  rows="8"
+                  placeholder="اكتب ملاحظاتك"
+                  class="form-control"
+                  name="note"
+                  id="note"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <button
+            id="btn"
+            type="submit"
+            class="contact-bttn"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="400"
+          >
+            ارسال
+          </button>
+
+          <!-- Submit overlay -->
+          <div id="form_overlay">
+            <div>
+              <img src="./images/thankyou.png" alt="thank you" />
+            </div>
+            <h2>شكراً</h2>
+            <h3>تم ارسال طلبك</h3>
+            <h3>سيتم التواصل معكم قريبا</h3>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--end form-->
+
     <!-- Start Testimonian -->
     <div class="title-box">
       <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
